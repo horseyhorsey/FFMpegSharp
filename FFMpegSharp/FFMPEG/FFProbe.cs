@@ -47,7 +47,7 @@ namespace FFMpegSharp.FFMPEG
             {
                 numberData = double.Parse(dict["streams"][vid]["duration"]);
                 info.Duration = TimeSpan.FromSeconds(numberData);
-                info.Duration = info.Duration.Subtract(TimeSpan.FromMilliseconds(info.Duration.Milliseconds));
+                //info.Duration = info.Duration.Subtract(TimeSpan.FromMilliseconds(info.Duration.Milliseconds));
             }
             catch (Exception)
             {
